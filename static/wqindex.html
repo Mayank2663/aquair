@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wqstyle.css">
+    <title>WQI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="back2">
+            <div class="wrapper">
+                <h2>WQI Components</h2>
+                <form action="{{url_for('predict')}}" method="POST">
+                  <div class="input-box">
+                    <input type="number" id="so2" step="0.01" name="so2" placeholder="DO" required>
+                  </div>
+                  <div class="input-box">
+                    <input type="number" id="no2" step="0.01" name="no2" placeholder="pH" required>
+                  </div>
+                  <div class="input-box">
+                    <input type="number" id="rspm" step="0.01" name="rspm" placeholder="FC" required>
+                  </div>
+                  <div class="input-box">
+                    <input type="number" id="spm" step="0.01" name="spm" placeholder="BOD" required>
+                  </div>
+                  <div class="input-box button">
+                    <input type="Submit" value="Predict">
+                  </div>
+                  
+                  
+                    
+                </form>
+              </div>
+            </div>
+    </div>
+    
+    
+</body>
+</html>
